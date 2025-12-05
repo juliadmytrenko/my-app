@@ -60,7 +60,7 @@ export default async function Post({ params }: Params) {
 
             <footer className="mt-8 text-center">
               <p className="text-sm text-purple-600">
-                ✨ Dziękuję za czytanie ✨
+                ✨ Thank you for reading. ✨
               </p>
             </footer>
           </article>
