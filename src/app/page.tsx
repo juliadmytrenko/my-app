@@ -2,6 +2,16 @@ import { getSortedPostsData } from "@/../lib/posts";
 import Link from "next/link";
 import Layout from "@/../components/Layout";
 
+function formatDate(dateString: string) {
+  const d = new Date(dateString);
+  if (isNaN(d.getTime())) return dateString;
+  return d.toLocaleDateString("pl-PL", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+
 export default function Home() {
   const posts = getSortedPostsData();
 
@@ -23,7 +33,9 @@ export default function Home() {
               >
                 {post.title}
               </Link>
-              <p className="text-purple-500 text-sm mt-1">📅 {post.date}</p>
+              <p className="text-purple-500 text-sm mt-1">
+                📅 {formatDate(post.date)}
+              </p>
             </li>
           ))}
         </ul>
