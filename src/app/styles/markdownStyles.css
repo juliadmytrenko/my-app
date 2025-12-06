@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@reference "tailwindcss";
+
+/* Base typography for markdown container */
+.markdown {
+  @apply text-lg leading-relaxed text-neutral-800;
+}
+
+/* Paragraphs and common text blocks */
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+/* Headings */
+.markdown h1 {
+  @apply text-4xl font-bold mt-14 mb-6 leading-tight;
+}
+
+.markdown h2 {
+  @apply text-3xl font-semibold mt-12 mb-4 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-2xl font-semibold mt-8 mb-4 leading-snug;
+}
+
+/* Lists */
+.markdown ul {
+  @apply list-disc pl-6;
+}
+
+.markdown ol {
+  @apply list-decimal pl-6;
+}
+
+/* Blockquotes */
+.markdown blockquote {
+  @apply border-l-4 border-neutral-700 pl-4 italic;
+}
+
+/* Inline code */
+.markdown :not(pre) > code {
+  @apply px-1 py-0.5 rounded bg-neutral-900 text-pink-300 text-sm;
+}
+
+/* Code blocks */
+.markdown pre {
+  @apply p-4 rounded-lg bg-neutral-900 overflow-x-auto text-sm;
+}
+
+/* Images */
+.markdown img {
+  @apply my-6 rounded-lg;
+}
+
+/* Links */
+.markdown a {
+  @apply text-pink-400 underline hover:text-pink-300;
+}

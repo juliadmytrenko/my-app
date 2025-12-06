@@ -54,7 +54,7 @@ export default async function Post({ params }: Params) {
               </p>
             </header>
 
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="markdown">
               <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
             </div>
 
