@@ -57,6 +57,8 @@
 /* Images */
 .markdown img {
   @apply my-6 rounded-lg;
+  /* Make images responsive */
+  width: 100%;
 }
 
 /* Links */
