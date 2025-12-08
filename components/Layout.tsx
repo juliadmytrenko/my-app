@@ -46,7 +46,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         />
       </div>
 
-      <div className="max-w-3xl mx-auto px-6 py-10 relative z-10">
+      <div className="max-w-6xl mx-auto px-6 py-10 relative z-10">
         {/* Header */}
         <header className="mb-12 text-center">
           <div className="inline-block bg-gradient-to-r from-pink-400 to-purple-400 rounded-full px-8 py-4 shadow-lg mb-6">
