@@ -8,30 +8,31 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-pink-50 text-gray-800 relative overflow-hidden">
+      {/* Animated starry background */}
+      <div className="background-container">
+        <div className="stars"></div>
+        <div className="twinkling"></div>
+        {/* <div className="clouds"></div> */}
+      </div>
+
       <div className="fixed bottom-0 left-0 z-10 pointer-events-none">
-        <div className="relative w-[300px] h-[300px]">
+        <div className="relative">
           <Image
-            src="/images/woodenmask.jpg"
+            src="/images/deku.png"
             alt="Wooden Mask"
             width={200}
             height={200}
             className="absolute bottom-0 left-0"
-            style={{
-              maskImage:
-                "radial-gradient(circle at bottom left, black 20%, transparent 100%)",
-              WebkitMaskImage:
-                "radial-gradient(circle at bottom left, black 20%, transparent 100%)",
-            }}
           />
-          <div 
+          <div
             className="absolute inset-0 bg-gradient-to-tr from-pink-100/80 via-purple-100/60 to-transparent"
             style={{
-              mixBlendMode: 'multiply'
+              mixBlendMode: "multiply",
             }}
           />
         </div>
       </div>
-      <div className="max-w-3xl mx-auto px-6 py-10">
+      <div className="max-w-3xl mx-auto px-6 py-10 relative z-10">
         {/* Header */}
         <header className="mb-12 text-center">
           <div className="inline-block bg-gradient-to-r from-pink-400 to-purple-400 rounded-full px-8 py-4 shadow-lg mb-6">
