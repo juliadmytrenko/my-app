@@ -2,6 +2,7 @@ import Link from "next/link";
 import Layout from "../../../../components/Layout";
 import { getPostData, getSortedPostsData } from "../../../../lib/posts";
 import { notFound } from "next/navigation";
+import Comments from "../../../../components/Comments";
 
 function formatDate(dateString: string) {
   const d = new Date(dateString);
@@ -64,6 +65,8 @@ export default async function Post({ params }: Params) {
               </p>
             </footer>
           </article>
+
+          <Comments />
         </div>
       </Layout>
     );
