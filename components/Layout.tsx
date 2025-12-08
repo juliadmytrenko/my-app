@@ -54,9 +54,28 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               ✨ Julia's Tech Blog ✨
             </h1>
           </div>
-          <p className="text-lg text-purple-700 font-medium mt-4">
-            Projects • Notes • Learning Journey
-          </p>
+          <nav className="mt-4 text-lg">
+            <a
+              href="/"
+              className="text-purple-600 hover:text-pink-500 font-semibold transition-colors no-underline hover:underline"
+            >
+              Projects
+            </a>
+            <span className="text-purple-400 mx-2">•</span>
+            <a
+              href="/"
+              className="text-purple-600 hover:text-pink-500 font-semibold transition-colors no-underline hover:underline"
+            >
+              Notes
+            </a>
+            <span className="text-purple-400 mx-2">•</span>
+            <a
+              href="/learning-journey"
+              className="text-purple-600 hover:text-pink-500 font-semibold transition-colors no-underline hover:underline"
+            >
+              Learning Journey
+            </a>
+          </nav>
         </header>
 
         {/* Main content */}
