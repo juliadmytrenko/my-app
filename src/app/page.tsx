@@ -21,7 +21,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
           Latest Posts
         </h2>
-        <ul className="space-y-4">
+        <ul className="space-y-4 list-none">
           {posts.map((post) => (
             <li
               key={post.id}
