@@ -32,6 +32,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           />
         </div>
       </div>
+
+      <div className="fixed bottom-0 right-0 z-10 pointer-events-none">
+        <Image
+          src="/images/jiggly.png"
+          alt="Jigglypuff"
+          width={200}
+          height={200}
+          style={{
+            mixBlendMode: "normal",
+            background: "transparent",
+          }}
+        />
+      </div>
+
       <div className="max-w-3xl mx-auto px-6 py-10 relative z-10">
         {/* Header */}
         <header className="mb-12 text-center">
