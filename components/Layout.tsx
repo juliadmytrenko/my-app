@@ -15,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {/* <div className="clouds"></div> */}
       </div>
 
-      <div className="fixed bottom-0 left-0 z-10 pointer-events-none">
+      {/* <div className="fixed bottom-0 left-0 z-10 pointer-events-none">
         <div className="relative">
           <Image
             src="/images/deku.png"
@@ -31,7 +31,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             }}
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="fixed bottom-0 right-0 z-10 pointer-events-none">
         <Image
