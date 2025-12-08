@@ -1,5 +1,5 @@
 ---
-title: "Building Next Pizza: My Journey with Next.js and React"
+title: "Building Next Pizza: My Journey with Next.js and React 🍕"
 date: "2025-12-08"
 ---
 

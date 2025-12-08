@@ -42,7 +42,7 @@ export default async function Post({ params }: Params) {
 
           <article className="prose lg:prose-xl max-w-none bg-gradient-to-br from-pink-50 to-purple-50 p-8 rounded-3xl shadow-2xl border border-pink-100">
             <header className="mb-6">
-              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-400 to-purple-400 text-white rounded-full px-4 py-2 shadow-md">
+              <div className="inline-flex items-center gap-3 px-4 py-2">
                 <span className="text-2xl">🎀</span>
                 <h1 className="text-2xl font-bold tracking-tight">
                   {post.title}
