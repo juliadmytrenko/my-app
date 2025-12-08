@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-pink-50 text-gray-800 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-pink-50 text-purple-900 relative overflow-hidden">
       {/* Animated starry background */}
       <div className="background-container">
         <div className="stars"></div>
@@ -60,7 +60,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </header>
 
         {/* Main content */}
-        <main className="bg-white/80 backdrop-blur rounded-3xl shadow-xl p-8 mb-8">
+        <main className="bg-white backdrop-blur rounded-3xl shadow-xl p-8 mb-8">
           {children}
         </main>
 

@@ -6,7 +6,7 @@
 
 /* Base typography for markdown container */
 .markdown {
-  @apply text-lg leading-relaxed text-neutral-800;
+  @apply text-lg leading-relaxed text-purple-900;
 }
 
 /* Paragraphs and common text blocks */
@@ -19,15 +19,15 @@
 
 /* Headings */
 .markdown h1 {
-  @apply text-4xl font-bold mt-14 mb-6 leading-tight text-pink-400;
+  @apply text-4xl font-bold mt-14 mb-6 leading-tight text-pink-500;
 }
 
 .markdown h2 {
-  @apply text-3xl font-semibold mt-12 mb-4 leading-snug text-pink-400;
+  @apply text-3xl font-semibold mt-12 mb-4 leading-snug text-pink-500;
 }
 
 .markdown h3 {
-  @apply text-2xl font-semibold mt-8 mb-4 leading-snug text-pink-400;
+  @apply text-2xl font-semibold mt-8 mb-4 leading-snug text-pink-500;
 }
 
 /* Lists */
@@ -41,7 +41,7 @@
 
 /* Blockquotes */
 .markdown blockquote {
-  @apply border-l-4 border-neutral-700 pl-4 italic text-neutral-600;
+  @apply border-l-4 border-pink-300 pl-4 italic text-purple-700;
 }
 
 /* Inline code */
@@ -51,18 +51,20 @@
 
 /* Code blocks */
 .markdown pre {
-  @apply p-4 rounded-lg bg-pink-100 overflow-x-auto text-sm font-mono text-gray-800 border border-pink-200;
+  @apply p-4 rounded-lg bg-pink-100 overflow-x-auto text-sm font-mono text-purple-900 border border-pink-200;
 }
 
 /* Images */
 .markdown img {
-  @apply my-6 rounded-lg shadow-md;
-  width: 100%; /* Make images responsive */
+  @apply my-6 rounded-lg shadow-md mx-auto;
+  max-width: 400px;
+  height: auto;
+  display: block;
 }
 
 /* Links */
 .markdown a {
-  @apply text-pink-400 underline hover:text-pink-300 transition-colors duration-200;
+  @apply text-pink-500 underline hover:text-pink-400 transition-colors duration-200;
 }
 
 /* Tables */
@@ -72,14 +74,14 @@
 
 .markdown th,
 .markdown td {
-  @apply border border-neutral-700 px-4 py-2 text-left;
+  @apply border border-pink-200 px-4 py-2 text-left;
 }
 
 .markdown th {
-  @apply bg-neutral-800 font-semibold;
+  @apply bg-pink-100 font-semibold text-purple-900;
 }
 
 /* Horizontal rules */
 .markdown hr {
-  @apply border-t border-neutral-700 my-8;
+  @apply border-t border-pink-300 my-8;
 }
