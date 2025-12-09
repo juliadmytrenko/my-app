@@ -33,26 +33,26 @@ export default function LearningJourney() {
               <p className="text-base leading-relaxed mb-4 text-white">
                 Hi! 👋 I'm a passionate developer on a continuous journey of
                 learning and growth. This blog is my digital garden 🌱 where I
-                document my experiences, discoveries, and the lessons I've learned
-                along the way in the world of web development.
+                document my experiences, discoveries, and the lessons I've
+                learned along the way in the world of web development.
               </p>
               <p className="text-base leading-relaxed mb-4 text-white">
                 I believe in learning by doing 💪, sharing knowledge with the
-                community 🤝, and constantly pushing the boundaries of what I can
-                create with code 💻.
+                community 🤝, and constantly pushing the boundaries of what I
+                can create with code 💻.
               </p>
               <p className="text-base leading-relaxed text-white">
-                When I'm not coding, you'll find me immersed in video games 🎮 and
-                board games 🎲, exploring the rich world of Japanese pop culture
-                🇯🇵✨, or enjoying a good game of tennis 🎾. These hobbies not only
-                help me unwind but also inspire creative thinking and
-                problem-solving in my development work.
+                When I'm not coding, you'll find me immersed in video games 🎮
+                and board games 🎲, exploring the rich world of Japanese pop
+                culture 🇯🇵✨, or enjoying a good game of tennis 🎾. These
+                hobbies not only help me unwind but also inspire creative
+                thinking and problem-solving in my development work.
               </p>
             </div>
             <div className="md:w-64 w-full flex justify-center md:justify-end">
-              <img 
-                src="/images/the-night-garden-makka-pakka.gif" 
-                alt="Makka Pakka" 
+              <img
+                src="/images/the-night-garden-makka-pakka.gif"
+                alt="Makka Pakka"
                 className="rounded-xl shadow-lg border-2 border-pink-300/30 max-w-full h-auto"
               />
             </div>
@@ -108,59 +108,117 @@ export default function LearningJourney() {
         </section>
 
         <section className="mb-8 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-          <h2 className="text-2xl font-semibold mb-4 text-pink-100">
+          <h2 className="text-2xl font-semibold mb-6 text-pink-100 text-center">
             🛣️ My Learning Path
           </h2>
-          <div className="space-y-6">
-            <div className="border-l-4 border-purple-400 pl-6 hover:border-pink-400 transition-colors">
-              <h3 className="text-xl font-semibold mb-2 text-purple-100">
-                2024 - Present: Advanced Web Development
-              </h3>
-              <p className="text-gray-100">
-                Building full-stack applications with Next.js and exploring
-                modern web technologies. Creating this blog to share my journey
-                and help others learn.
-              </p>
-            </div>
+          <div className="relative max-w-4xl mx-auto">
+            {/* Vertical timeline line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-purple-400 via-pink-400 to-purple-400"></div>
 
-            <div className="border-l-4 border-pink-400 pl-6 hover:border-purple-400 transition-colors">
-              <h3 className="text-xl font-semibold mb-2 text-pink-100">
-                2023: Frontend Foundations
-              </h3>
-              <p className="text-gray-100">
-                Mastered React and component-based architecture. Learned about
-                state management, hooks, and building responsive user
-                interfaces.
-              </p>
-            </div>
+            {/* Timeline items */}
+            <div className="space-y-8">
+              {/* Right side item */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <span className="text-lg font-bold text-purple-300">
+                    ~2014
+                  </span>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-200 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="bg-gradient-to-br from-purple-500/30 to-pink-500/30 backdrop-blur-sm p-4 rounded-xl border border-purple-300/30 shadow-xl hover:scale-105 transition-transform duration-300">
+                    <h3 className="text-lg font-semibold mb-1 text-purple-200">
+                      First Steps
+                    </h3>
+                    <p className="text-sm text-white">
+                      First encounter with writing algorithms on paper in school
+                      📝
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-            <div className="border-l-4 border-purple-300 pl-6 hover:border-pink-300 transition-colors">
-              <h3 className="text-xl font-semibold mb-2 text-purple-100">
-                2022: The Beginning
-              </h3>
-              <p className="text-gray-100">
-                Started my coding journey with HTML, CSS, and JavaScript. Fell
-                in love with creating interactive web experiences.
-              </p>
-            </div>
+              {/* Left side item */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <div className="bg-gradient-to-br from-pink-500/30 to-purple-500/30 backdrop-blur-sm p-4 rounded-xl border border-pink-300/30 shadow-xl hover:scale-105 transition-transform duration-300">
+                    <h3 className="text-lg font-semibold mb-1 text-pink-200">
+                      Computer Science Studies
+                    </h3>
+                    <p className="text-sm text-white">
+                      First year of computer science studies - this was when I
+                      first took coding seriously 🤓
+                    </p>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-pink-300 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="w-1/2 pl-8">
+                  <span className="text-lg font-bold text-pink-300">2018</span>
+                </div>
+              </div>
 
-            <div className="border-l-4 border-pink-300 pl-6 hover:border-purple-300 transition-colors">
-              <h3 className="text-xl font-semibold mb-2 text-pink-100">
-                2018: Computer Science Studies
-              </h3>
-              <p className="text-gray-100">
-                First year of computer science studies - this was when I first
-                took coding seriously.
-              </p>
-            </div>
+              {/* Right side item */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <span className="text-lg font-bold text-purple-300">
+                    2022
+                  </span>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-300 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="bg-gradient-to-br from-purple-500/30 to-pink-500/30 backdrop-blur-sm p-4 rounded-xl border border-purple-300/30 shadow-xl hover:scale-105 transition-transform duration-300">
+                    <h3 className="text-lg font-semibold mb-1 text-purple-200">
+                      The Beginning
+                    </h3>
+                    <p className="text-sm text-white">
+                      Started my coding journey with HTML, CSS, and JavaScript.
+                      Fell in love with creating interactive web experiences.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-            <div className="border-l-4 border-purple-200 pl-6 hover:border-pink-200 transition-colors">
-              <h3 className="text-xl font-semibold mb-2 text-purple-100">
-                ~2014: First Steps
-              </h3>
-              <p className="text-gray-100">
-                First encounter with writing algorithms on paper in school.
-              </p>
+              {/* Left side item */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <div className="bg-gradient-to-br from-pink-500/30 to-purple-500/30 backdrop-blur-sm p-4 rounded-xl border border-pink-300/30 shadow-xl hover:scale-105 transition-transform duration-300">
+                    <h3 className="text-lg font-semibold mb-1 text-pink-200">
+                      Frontend Foundations
+                    </h3>
+                    <p className="text-sm text-white">
+                      Mastered React and component-based architecture. Learned
+                      about state management, hooks, and building responsive
+                      user interfaces.
+                    </p>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-pink-400 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="w-1/2 pl-8">
+                  <span className="text-lg font-bold text-pink-300">2023</span>
+                </div>
+              </div>
+
+              {/* Right side item */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <span className="text-lg font-bold text-purple-300">
+                    2024 - Present
+                  </span>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-400 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="bg-gradient-to-br from-purple-500/30 to-pink-500/30 backdrop-blur-sm p-4 rounded-xl border border-purple-300/30 shadow-xl hover:scale-105 transition-transform duration-300">
+                    <h3 className="text-lg font-semibold mb-1 text-purple-200">
+                      Advanced Web Development
+                    </h3>
+                    <p className="text-sm text-white">
+                      Building full-stack applications with Next.js and
+                      exploring modern web technologies. Creating this blog to
+                      share my journey and help others learn.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
