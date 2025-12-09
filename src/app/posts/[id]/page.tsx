@@ -31,7 +31,7 @@ export default async function Post({ params }: Params) {
 
     return (
       <Layout>
-        <div className="max-w-3xl mx-auto">
+        <div className="w-full">
           <nav className="mb-4">
             <Link
               href="/"
