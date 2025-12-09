@@ -7,12 +7,11 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-pink-50 text-purple-900 relative overflow-hidden">
+    <div className="min-h-screen text-white relative overflow-hidden">
       {/* Animated starry background */}
       <div className="background-container">
         <div className="stars"></div>
         <div className="twinkling"></div>
-        {/* <div className="clouds"></div> */}
       </div>
 
       {/* <div className="fixed bottom-0 left-0 z-10 pointer-events-none">
@@ -36,22 +35,22 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 relative z-10">
         {/* Header */}
         <header className="mb-8 sm:mb-12 text-center">
-          <div className="inline-block bg-gradient-to-r from-pink-400 to-purple-400 rounded-full px-4 sm:px-8 py-3 sm:py-4 shadow-lg mb-4 sm:mb-6">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white drop-shadow-lg">
+          <div className="inline-block bg-white/10 backdrop-blur-lg rounded-3xl px-8 sm:px-12 py-5 sm:py-6 shadow-2xl mb-4 sm:mb-6 border-2 border-pink-300/30">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-lg">
               ✨ Julia's Tech Blog ✨
             </h1>
           </div>
-          <nav className="mt-4 text-sm sm:text-base md:text-lg flex flex-wrap justify-center gap-2 sm:gap-0">
+          <nav className="mt-6 text-sm sm:text-base md:text-lg flex flex-wrap justify-center gap-2 sm:gap-0">
             <a
               href="/"
-              className="text-purple-600 hover:text-pink-500 font-semibold transition-colors no-underline hover:underline"
+              className="text-pink-200 hover:text-white font-semibold transition-all duration-300 no-underline hover:underline hover:scale-105"
             >
               Projects
             </a>
-            <span className="text-purple-400 mx-2 hidden sm:inline">•</span>
+            <span className="text-purple-300 mx-3 hidden sm:inline">•</span>
             <a
               href="/learning-journey"
-              className="text-purple-600 hover:text-pink-500 font-semibold transition-colors no-underline hover:underline"
+              className="text-pink-200 hover:text-white font-semibold transition-all duration-300 no-underline hover:underline hover:scale-105"
             >
               Learning Journey
             </a>
@@ -59,16 +58,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </header>
 
         {/* Main content */}
-        <main className="bg-white backdrop-blur rounded-2xl sm:rounded-3xl shadow-xl p-4 sm:p-6 md:p-8 mb-8">
+        <main className="bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-6 md:p-8 mb-8 border border-white/20">
           {children}
         </main>
 
         {/* Footer */}
-        <footer className="mt-16 pt-8 border-t-2 border-pink-300 text-center">
-          <p className="text-base text-purple-600 font-medium mb-2">
-            Contact: <a href="mailto:dmyternkojulia@gmail.com" className="text-pink-500 hover:text-pink-600 transition-colors underline">dmyternkojulia@gmail.com</a>
+        <footer className="mt-16 pt-8 border-t-2 border-pink-400/30 text-center">
+          <p className="text-base text-white font-medium mb-2">
+            Contact: <a href="mailto:dmyternkojulia@gmail.com" className="text-pink-200 hover:text-white transition-colors underline">dmyternkojulia@gmail.com</a>
           </p>
-          <p className="text-sm text-purple-600 font-medium">
+          <p className="text-sm text-pink-100 font-medium">
             © {new Date().getFullYear()} Julia Dmytrenko ✨
           </p>
         </footer>

@@ -4,7 +4,7 @@ import Giscus from "@giscus/react";
 
 export default function Comments() {
   return (
-    <div className="mt-8">
+    <div className="mt-8 bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
       <Giscus
         id="comments"
         repo="juliadmytrenko/my-app"
@@ -16,7 +16,7 @@ export default function Comments() {
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="bottom"
-        theme="preferred_color_scheme"
+        theme="dark"
         lang="pl"
         loading="lazy"
       />
