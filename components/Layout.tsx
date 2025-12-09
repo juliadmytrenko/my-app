@@ -93,6 +93,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t-2 border-pink-300 text-center">
+          <p className="text-base text-purple-600 font-medium mb-2">
+            Contact: <a href="mailto:dmyternkojulia@gmail.com" className="text-pink-500 hover:text-pink-600 transition-colors underline">dmyternkojulia@gmail.com</a>
+          </p>
           <p className="text-sm text-purple-600 font-medium">
             © {new Date().getFullYear()} Julia Dmytrenko ✨
           </p>
