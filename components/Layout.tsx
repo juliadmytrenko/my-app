@@ -33,6 +33,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
       </div> */}
 
+      <div className="fixed bottom-0 left-0 z-10 pointer-events-none hidden sm:block">
+        <Image
+          src="/images/jigglypuff2.png"
+          alt="Jigglypuff 2"
+          width={150}
+          height={150}
+          className="sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px]"
+          style={{
+            mixBlendMode: "normal",
+            background: "transparent",
+          }}
+        />
+      </div>
+
       <div className="fixed bottom-0 right-0 z-10 pointer-events-none hidden sm:block">
         <Image
           src="/images/jiggly.png"
