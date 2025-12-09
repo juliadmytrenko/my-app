@@ -28,24 +28,35 @@ export default function LearningJourney() {
           <h2 className="text-2xl font-semibold mb-4 text-pink-100">
             About Me
           </h2>
-          <p className="text-base leading-relaxed mb-4 text-white">
-            Hi! 👋 I'm a passionate developer on a continuous journey of
-            learning and growth. This blog is my digital garden 🌱 where I
-            document my experiences, discoveries, and the lessons I've learned
-            along the way in the world of web development.
-          </p>
-          <p className="text-base leading-relaxed mb-4 text-white">
-            I believe in learning by doing 💪, sharing knowledge with the
-            community 🤝, and constantly pushing the boundaries of what I can
-            create with code 💻.
-          </p>
-          <p className="text-base leading-relaxed text-white">
-            When I'm not coding, you'll find me immersed in video games 🎮 and
-            board games 🎲, exploring the rich world of Japanese pop culture
-            🇯🇵✨, or enjoying a good game of tennis 🎾. These hobbies not only
-            help me unwind but also inspire creative thinking and
-            problem-solving in my development work.
-          </p>
+          <div className="flex flex-col md:flex-row gap-6 items-start">
+            <div className="flex-1">
+              <p className="text-base leading-relaxed mb-4 text-white">
+                Hi! 👋 I'm a passionate developer on a continuous journey of
+                learning and growth. This blog is my digital garden 🌱 where I
+                document my experiences, discoveries, and the lessons I've learned
+                along the way in the world of web development.
+              </p>
+              <p className="text-base leading-relaxed mb-4 text-white">
+                I believe in learning by doing 💪, sharing knowledge with the
+                community 🤝, and constantly pushing the boundaries of what I can
+                create with code 💻.
+              </p>
+              <p className="text-base leading-relaxed text-white">
+                When I'm not coding, you'll find me immersed in video games 🎮 and
+                board games 🎲, exploring the rich world of Japanese pop culture
+                🇯🇵✨, or enjoying a good game of tennis 🎾. These hobbies not only
+                help me unwind but also inspire creative thinking and
+                problem-solving in my development work.
+              </p>
+            </div>
+            <div className="md:w-64 w-full flex justify-center md:justify-end">
+              <img 
+                src="/images/the-night-garden-makka-pakka.gif" 
+                alt="Makka Pakka" 
+                className="rounded-xl shadow-lg border-2 border-pink-300/30 max-w-full h-auto"
+              />
+            </div>
+          </div>
         </section>
 
         <section className="mb-8">
