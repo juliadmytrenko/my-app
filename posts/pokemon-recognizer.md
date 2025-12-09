@@ -3,6 +3,8 @@ title: "PokemonRecognizer — a practical mini‑project to learn PyTorch and da
 date: "2025-12-08"
 ---
 
+![Jigglupuff gif](/images/jigglypuff_gif.gif)
+
 This project is a compact, hands‑on notebook that walks through building a small image classifier which decides whether a plush toy is Jigglypuff or Bulbasaur. It’s intentionally simple so you can focus on data handling, model structure and tuning basic hyperparameters.
 
 Below I summarize how the code works, what the main components are, and which tools are used.
