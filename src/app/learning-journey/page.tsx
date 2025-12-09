@@ -14,10 +14,10 @@ export default function LearningJourney() {
             About Me
           </h2>
           <p className="text-base leading-relaxed mb-4 text-white">
-            Hi! 👋 I'm a passionate developer on a continuous journey of learning
-            and growth. This blog is my digital garden 🌱 where I document my
-            experiences, discoveries, and the lessons I've learned along the way
-            in the world of web development.
+            Hi! 👋 I'm a passionate developer on a continuous journey of
+            learning and growth. This blog is my digital garden 🌱 where I
+            document my experiences, discoveries, and the lessons I've learned
+            along the way in the world of web development.
           </p>
           <p className="text-base leading-relaxed mb-4 text-white">
             I believe in learning by doing 💪, sharing knowledge with the
@@ -25,17 +25,17 @@ export default function LearningJourney() {
             create with code 💻.
           </p>
           <p className="text-base leading-relaxed text-white">
-            When I'm not coding, you'll find me immersed in video games 🎮 and 
-            board games 🎲, exploring the rich world of Japanese pop culture 🇯🇵✨, 
-            or enjoying a good game of tennis 🎾. These hobbies not only help me 
-            unwind but also inspire creative thinking and problem-solving in 
-            my development work.
+            When I'm not coding, you'll find me immersed in video games 🎮 and
+            board games 🎲, exploring the rich world of Japanese pop culture
+            🇯🇵✨, or enjoying a good game of tennis 🎾. These hobbies not only
+            help me unwind but also inspire creative thinking and
+            problem-solving in my development work.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 text-pink-100">
-            My Core Tech Stack
+            🧰 My Core Tech Stack
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
@@ -58,7 +58,7 @@ export default function LearningJourney() {
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 text-pink-100">
-            Technologies I've Worked With
+            🛠️ Technologies I've Worked With
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
@@ -81,7 +81,7 @@ export default function LearningJourney() {
 
         <section className="mb-8 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
           <h2 className="text-2xl font-semibold mb-4 text-pink-100">
-            My Learning Path
+            🛣️ My Learning Path
           </h2>
           <div className="space-y-6">
             <div className="border-l-4 border-purple-400 pl-6 hover:border-pink-400 transition-colors">
@@ -121,7 +121,8 @@ export default function LearningJourney() {
                 2018: Computer Science Studies
               </h3>
               <p className="text-gray-100">
-                First year of computer science studies - this was when I first took coding seriously.
+                First year of computer science studies - this was when I first
+                took coding seriously.
               </p>
             </div>
 
@@ -138,7 +139,7 @@ export default function LearningJourney() {
 
         <section className="mb-8 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
           <h2 className="text-2xl font-semibold mb-4 text-pink-100">
-            Current Goals
+            🎯 Current Goals
           </h2>
           <ul className="space-y-3 list-none pl-0">
             <li className="flex items-start">
@@ -149,11 +150,15 @@ export default function LearningJourney() {
             </li>
             <li className="flex items-start">
               <span className="text-purple-200 mr-2">✓</span>
-              <span className="text-white">Contribute to open-source projects</span>
+              <span className="text-white">
+                Contribute to open-source projects
+              </span>
             </li>
             <li className="flex items-start">
               <span className="text-purple-200 mr-2">✓</span>
-              <span className="text-white">Master advanced TypeScript patterns</span>
+              <span className="text-white">
+                Master advanced TypeScript patterns
+              </span>
             </li>
             <li className="flex items-start">
               <span className="text-purple-200 mr-2">✓</span>
@@ -163,17 +168,21 @@ export default function LearningJourney() {
             </li>
             <li className="flex items-start">
               <span className="text-purple-200 mr-2">✓</span>
-              <span className="text-white">Build projects that solve real-world problems</span>
+              <span className="text-white">
+                Build projects that solve real-world problems
+              </span>
             </li>
           </ul>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 text-pink-100">
-            What I'm Learning Now
+            👩🏻‍💻 What I'm Learning Now 📓✍🏻💡
           </h2>
           <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-pink-300/20">
-            <p className="text-base mb-3 text-pink-100">Currently diving deep into:</p>
+            <p className="text-base mb-3 text-pink-100">
+              Currently diving deep into:
+            </p>
             <ul className="space-y-2 ml-6 list-disc text-white">
               <li>
                 Server-side rendering and static site generation with Next.js
@@ -187,7 +196,7 @@ export default function LearningJourney() {
 
         <section className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
           <h2 className="text-2xl font-semibold mb-4 text-pink-100">
-            Let's Connect
+            🤝Let's Connect
           </h2>
           <p className="text-base leading-relaxed text-white">
             I'm always excited to connect with fellow developers and learners!
