@@ -93,20 +93,12 @@ html {
 }
 
 /* Responsive images in markdown */
-.markdown img {
-  max-width: 100% !important;
-  width: 100% !important;
-  height: auto !important;
-  border-radius: 0.5rem;
-  margin: 1rem auto;
-  display: block;
-  object-fit: contain;
-}
-
+article img,
+.markdown img,
 .prose img {
-  max-width: 100% !important;
-  width: auto !important;
-  height: auto !important;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   border-radius: 0.5rem;
   margin: 1rem auto;
   display: block;
@@ -114,6 +106,7 @@ html {
 }
 
 /* Prevent horizontal overflow */
+article,
 .markdown,
 .prose {
   overflow-wrap: break-word;
@@ -123,30 +116,35 @@ html {
   max-width: 100%;
 }
 
+article pre,
 .markdown pre,
 .prose pre {
   overflow-x: auto;
   max-width: 100%;
 }
 
+article code,
 .markdown code,
 .prose code {
   word-break: break-all;
 }
 
 @media (max-width: 640px) {
+  article img,
   .markdown img,
   .prose img {
-    max-width: 100% !important;
-    width: 100% !important;
+    max-width: 100%;
+    width: 100%;
     margin: 0.75rem auto;
   }
   
+  article,
   .markdown,
   .prose {
     font-size: 0.875rem;
   }
   
+  article pre,
   .markdown pre,
   .prose pre {
     font-size: 0.75rem;
