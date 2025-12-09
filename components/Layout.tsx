@@ -33,34 +33,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
       </div> */}
 
-      <div className="fixed bottom-0 left-0 z-10 pointer-events-none hidden sm:block">
-        <Image
-          src="/images/jigglypuff2.png"
-          alt="Jigglypuff 2"
-          width={150}
-          height={150}
-          className="sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px]"
-          style={{
-            mixBlendMode: "normal",
-            background: "transparent",
-          }}
-        />
-      </div>
-
-      <div className="fixed bottom-0 right-0 z-10 pointer-events-none hidden sm:block">
-        <Image
-          src="/images/jiggly.png"
-          alt="Jigglypuff"
-          width={150}
-          height={150}
-          className="sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px]"
-          style={{
-            mixBlendMode: "normal",
-            background: "transparent",
-          }}
-        />
-      </div>
-
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 relative z-10">
         {/* Header */}
         <header className="mb-8 sm:mb-12 text-center">
@@ -100,6 +72,35 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             © {new Date().getFullYear()} Julia Dmytrenko ✨
           </p>
         </footer>
+      </div>
+      
+      {/* Jigglypuff images at bottom corners of screen */}
+      <div className="absolute bottom-0 left-0 z-10 pointer-events-none hidden sm:block">
+        <Image
+          src="/images/jigglypuff2.png"
+          alt="Jigglypuff 2"
+          width={150}
+          height={150}
+          className="sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px]"
+          style={{
+            mixBlendMode: "normal",
+            background: "transparent",
+          }}
+        />
+      </div>
+
+      <div className="absolute bottom-0 right-0 z-10 pointer-events-none hidden sm:block">
+        <Image
+          src="/images/jiggly.png"
+          alt="Jigglypuff"
+          width={150}
+          height={150}
+          className="sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px]"
+          style={{
+            mixBlendMode: "normal",
+            background: "transparent",
+          }}
+        />
       </div>
     </div>
   );
