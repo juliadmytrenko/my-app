@@ -1,13 +1,23 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { render } from "@testing-library/react";
 import Comments from "./Comments";
 
+vi.mock("@giscus/react", () => ({
+  default: ({ id }: { id: string }) => (
+    <div id={id} data-testid="giscus-mock" />
+  ),
+}));
+
 describe("Comments Component", () => {
   it("renders without crashing", () => {
-    // Just check if the component renders without errors
     const { container } = render(<Comments />);
 
-    // Check if the container div exists
     expect(container.querySelector(".mt-8")).toBeInTheDocument();
+  });
+
+  it("renders Giscus component", () => {
+    const { container } = render(<Comments />);
+
+    expect(container.querySelector("#comments")).toBeInTheDocument();
   });
 });

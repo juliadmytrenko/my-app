@@ -28,8 +28,7 @@ describe("Learning Journey Page", () => {
   it("shows all technologies", () => {
     render(<LearningJourney />);
 
-    // Check if Technologies section and tech stack are present
-    expect(screen.getByText("Technologies I Work With")).toBeInTheDocument();
+    expect(screen.getByText("My Core Tech Stack")).toBeInTheDocument();
     expect(screen.getByText("React")).toBeInTheDocument();
     expect(screen.getByText("TypeScript")).toBeInTheDocument();
   });
