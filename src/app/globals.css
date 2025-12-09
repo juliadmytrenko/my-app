@@ -91,3 +91,65 @@ html {
   z-index: 2;
   animation: move-background 150s linear infinite;
 }
+
+/* Responsive images in markdown */
+.markdown img {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  object-fit: contain;
+}
+
+.prose img {
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Prevent horizontal overflow */
+.markdown,
+.prose {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.markdown pre,
+.prose pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.markdown code,
+.prose code {
+  word-break: break-all;
+}
+
+@media (max-width: 640px) {
+  .markdown img,
+  .prose img {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0.75rem auto;
+  }
+  
+  .markdown,
+  .prose {
+    font-size: 0.875rem;
+  }
+  
+  .markdown pre,
+  .prose pre {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+}

@@ -18,18 +18,18 @@ export default function Home() {
   return (
     <Layout>
       <div className="space-y-6">
-        <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
+        <h2 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
           Latest Posts
         </h2>
         <ul className="space-y-4 list-none pl-0">
           {posts.map((post) => (
             <li
               key={post.id}
-              className="border-b-2 border-pink-200 pb-4 hover:bg-pink-50 rounded-lg px-4 py-3 transition-colors"
+              className="border-b-2 border-pink-200 pb-4 hover:bg-pink-50 rounded-lg px-2 sm:px-4 py-3 transition-colors"
             >
               <Link
                 href={`/posts/${post.id}`}
-                className="text-pink-600 hover:text-purple-600 font-semibold text-lg transition-colors"
+                className="text-pink-600 hover:text-purple-600 font-semibold text-base sm:text-lg transition-colors break-words"
               >
                 {post.title}
               </Link>
