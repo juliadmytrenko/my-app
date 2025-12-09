@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="space-y-6">
-        <h2 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
+        <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
           Latest Posts
         </h2>
         <ul className="space-y-4 list-none pl-0">
