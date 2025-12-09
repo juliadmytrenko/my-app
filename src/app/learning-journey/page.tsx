@@ -35,7 +35,7 @@ export default function LearningJourney() {
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 text-purple-700">
-            Technologies I Work With
+            My Core Tech Stack
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
@@ -49,6 +49,29 @@ export default function LearningJourney() {
               <div
                 key={tech}
                 className="bg-gradient-to-br from-purple-100 to-pink-100 p-4 rounded-lg text-center font-semibold shadow-md hover:shadow-lg transition-shadow"
+              >
+                {tech}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4 text-purple-700">
+            Technologies I've Worked With
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              "REST API",
+              "GraphQL",
+              "MySQL",
+              "Bootstrap",
+              "Vue.js",
+              "Scrum",
+            ].map((tech) => (
+              <div
+                key={tech}
+                className="bg-gradient-to-br from-pink-100 to-purple-100 p-4 rounded-lg text-center font-semibold shadow-md hover:shadow-lg transition-shadow"
               >
                 {tech}
               </div>

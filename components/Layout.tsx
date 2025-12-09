@@ -78,13 +78,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </a>
             <span className="text-purple-400 mx-2 hidden sm:inline">•</span>
             <a
-              href="/"
-              className="text-purple-600 hover:text-pink-500 font-semibold transition-colors no-underline hover:underline"
-            >
-              Notes
-            </a>
-            <span className="text-purple-400 mx-2 hidden sm:inline">•</span>
-            <a
               href="/learning-journey"
               className="text-purple-600 hover:text-pink-500 font-semibold transition-colors no-underline hover:underline"
             >
