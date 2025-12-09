@@ -1,5 +1,20 @@
 import React from "react";
 import Layout from "@/../components/Layout";
+import {
+  FaReact,
+  FaNode,
+  FaGitAlt,
+  FaBootstrap,
+  FaVuejs,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiGraphql,
+} from "react-icons/si";
+import { MdApi, MdGroups } from "react-icons/md";
+import { TbBrandMysql } from "react-icons/tb";
 
 export default function LearningJourney() {
   return (
@@ -39,18 +54,19 @@ export default function LearningJourney() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              "React",
-              "Next.js",
-              "TypeScript",
-              "Tailwind CSS",
-              "Node.js",
-              "Git",
+              { name: "React", Icon: FaReact, color: "#61DAFB" },
+              { name: "Next.js", Icon: SiNextdotjs, color: "#FFFFFF" },
+              { name: "TypeScript", Icon: SiTypescript, color: "#3178C6" },
+              { name: "Tailwind CSS", Icon: SiTailwindcss, color: "#06B6D4" },
+              { name: "Node.js", Icon: FaNode, color: "#339933" },
+              { name: "Git", Icon: FaGitAlt, color: "#F05032" },
             ].map((tech) => (
               <div
-                key={tech}
-                className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm p-4 rounded-lg text-center font-semibold shadow-lg hover:shadow-pink-500/30 transition-all duration-300 border border-pink-300/20 text-white hover:scale-105"
+                key={tech.name}
+                className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm p-4 rounded-lg text-center font-semibold shadow-lg hover:shadow-pink-500/30 transition-all duration-300 border border-pink-300/20 hover:scale-105 flex items-center justify-center gap-2"
               >
-                {tech}
+                <tech.Icon className="text-2xl" style={{ color: tech.color }} />
+                <span style={{ color: tech.color }}>{tech.name}</span>
               </div>
             ))}
           </div>
@@ -62,18 +78,19 @@ export default function LearningJourney() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              "REST API",
-              "GraphQL",
-              "MySQL",
-              "Bootstrap",
-              "Vue.js",
-              "Scrum",
+              { name: "REST API", Icon: MdApi, color: "#FF6C37" },
+              { name: "GraphQL", Icon: SiGraphql, color: "#E10098" },
+              { name: "MySQL", Icon: TbBrandMysql, color: "#4479A1" },
+              { name: "Bootstrap", Icon: FaBootstrap, color: "#7952B3" },
+              { name: "Vue.js", Icon: FaVuejs, color: "#4FC08D" },
+              { name: "Scrum", Icon: MdGroups, color: "#009FDA" },
             ].map((tech) => (
               <div
-                key={tech}
-                className="bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm p-4 rounded-lg text-center font-semibold shadow-lg hover:shadow-purple-500/30 transition-all duration-300 border border-purple-300/20 text-white hover:scale-105"
+                key={tech.name}
+                className="bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm p-4 rounded-lg text-center font-semibold shadow-lg hover:shadow-purple-500/30 transition-all duration-300 border border-purple-300/20 hover:scale-105 flex items-center justify-center gap-2"
               >
-                {tech}
+                <tech.Icon className="text-2xl" style={{ color: tech.color }} />
+                <span style={{ color: tech.color }}>{tech.name}</span>
               </div>
             ))}
           </div>
