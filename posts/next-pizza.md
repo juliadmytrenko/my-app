@@ -3,7 +3,7 @@ title: "Building Next Pizza: My Journey with Next.js and React 🍕"
 date: "2025-12-11"
 ---
 
-![NextPizza App](/images/NexPizza.png)
+![NextPizza App](/images/NexPizza.PNG)
 
 [working demo](https://next-pizza-five-pi.vercel.app/)
 
