@@ -1,6 +1,6 @@
 ---
 title: "Building Next Pizza: My Journey with Next.js and React 🍕"
-date: "2025-12-08"
+date: "2025-12-11"
 ---
 
 ![NextPizza App](/images/NexPizza.png)
