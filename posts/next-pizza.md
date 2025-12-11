@@ -3,7 +3,9 @@ title: "Building Next Pizza: My Journey with Next.js and React 🍕"
 date: "2025-12-08"
 ---
 
-![NextPizza App](/images/NexPizza.png)
+![NextPizza App](/images/NexPizza.PNG)
+
+[working demo](https://next-pizza-five-pi.vercel.app/)
 
 I'm excited to share my latest project - **Next Pizza**, a pizza ordering web application that I've been working on. While it's still a work in progress, I wanted to document what I've built so far and share some insights from the development process.
 
