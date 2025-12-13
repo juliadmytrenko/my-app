@@ -37,7 +37,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <header className="mb-8 sm:mb-12 text-center">
           <div className="inline-block bg-white/10 backdrop-blur-lg rounded-3xl px-8 sm:px-12 py-5 sm:py-6 shadow-2xl mb-4 sm:mb-6 border-2 border-pink-300/30">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-lg">
-              ✨ Julia's Tech Blog ✨
+              ✨ Julia's Tech Blog (^=◕ᴥ◕=^) ✨
             </h1>
           </div>
           <nav className="mt-6 text-sm sm:text-base md:text-lg flex flex-wrap justify-center gap-2 sm:gap-0">
@@ -65,14 +65,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t-2 border-pink-400/30 text-center">
           <p className="text-base text-white font-medium mb-2">
-            Contact: <a href="mailto:dmyternkojulia@gmail.com" className="text-pink-200 hover:text-white transition-colors underline">dmyternkojulia@gmail.com</a>
+            Contact:{" "}
+            <a
+              href="mailto:dmyternkojulia@gmail.com"
+              className="text-pink-200 hover:text-white transition-colors underline"
+            >
+              dmyternkojulia@gmail.com
+            </a>
           </p>
           <p className="text-sm text-pink-100 font-medium">
             © {new Date().getFullYear()} Julia Dmytrenko ✨
           </p>
         </footer>
       </div>
-      
+
       {/* Jigglypuff images at bottom corners of screen */}
       <div className="absolute bottom-0 left-0 z-10 pointer-events-none hidden sm:block">
         <Image
