@@ -3,7 +3,7 @@ import Layout from "../../../../components/Layout";
 import { getPostData, getSortedPostsData } from "../../../../lib/posts";
 import { notFound } from "next/navigation";
 import Comments from "../../../../components/Comments";
-import readTime from "reading-time";
+import readTime from "../../../../lib/read-time";
 
 function formatDate(dateString: string) {
   const d = new Date(dateString);
@@ -55,7 +55,7 @@ export default async function Post({ params }: Params) {
                 <span className="font-medium">{formatDate(post.date)}</span>
               </p>
               <p className="mt-3 text-pink-200 text-xs sm:text-sm">
-                <span aria-hidden>⏰ {readTime(post.contentHtml).text}</span>{" "}
+                <span aria-hidden>⏰ {post.readTime}</span>{" "}
               </p>
             </header>
 

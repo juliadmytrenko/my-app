@@ -67,5 +67,6 @@ export async function getPostData(id: string) {
     contentHtml,
     title: String(data.title ?? ""),
     date: String(data.date ?? ""),
+    readTime: readingTime(matterResult.content).text,
   };
 }
