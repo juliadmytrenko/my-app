@@ -3,7 +3,6 @@ import Layout from "../../../../components/Layout";
 import { getPostData, getSortedPostsData } from "../../../../lib/posts";
 import { notFound } from "next/navigation";
 import Comments from "../../../../components/Comments";
-import readTime from "../../../../lib/read-time";
 
 function formatDate(dateString: string) {
   const d = new Date(dateString);
