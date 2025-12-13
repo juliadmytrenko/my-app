@@ -33,9 +33,10 @@ export default function Home() {
               >
                 {post.title}
               </Link>
-              <p className="text-pink-200 text-sm mt-2">
-                📅 {formatDate(post.date)}
-              </p>
+              <div className="flex flex-wrap gap-3 mt-2 text-pink-200 text-sm">
+                <span>📅 {formatDate(post.date)}</span>
+                <span>⏰ {post.readTime}</span>
+              </div>
             </li>
           ))}
         </ul>

@@ -3,11 +3,13 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import readingTime from "reading-time";
 
 export interface PostMeta {
   id: string;
   title: string;
   date: string;
+  readTime: string;
 }
 
 const postsDirectory = path.join(process.cwd(), "posts");
@@ -33,11 +35,13 @@ export function getSortedPostsData(): PostMeta[] {
 
     const matterResult = matter(fileContents);
     const data = matterResult.data as { title?: string; date?: string };
+    const readTime = readingTime(matterResult.content);
 
     return {
       id,
       title: String(data.title ?? ""),
       date: String(data.date ?? ""),
+      readTime: readTime.text,
     };
   });
 
