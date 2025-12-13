@@ -5,7 +5,7 @@ date: "2025-12-13"
 
 ## An honest confession
 
-I’ll be honest — I’ve been using AI to generate my posts, but I’ve decided that from today on I’ll write them myself, in my own words and with my own mistakes xd  
+I’ll be honest — I’ve been using AI to generate my posts, but I’ve decided that from today on I’ll write them myself, in my own words and with my own mistakes xd (only using AI chats for translation) 
 Why? Because personally, I prefer reading content that feels more human, whatever that actually means.
 
 ## What’s next?
