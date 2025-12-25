@@ -70,7 +70,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               href="mailto:dmyternkojulia@gmail.com"
               className="text-pink-200 hover:text-white transition-colors underline"
             >
-              dmyternkojulia@gmail.com
+              dmytrenkojulia@gmail.com
             </a>
           </p>
           <p className="text-sm text-pink-100 font-medium">
