@@ -51,7 +51,7 @@
 
 /* Code blocks */
 .markdown pre {
-  @apply p-4 rounded-lg bg-pink-100 overflow-x-auto text-sm font-mono text-purple-900 border border-pink-200;
+  @apply p-4 rounded-lg overflow-x-auto text-sm font-mono text-purple-900 border border-pink-200;
 }
 
 /* Images */
